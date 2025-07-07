@@ -1,5 +1,4 @@
 "use client";
-import React, { use } from "react";
 
 interface VideoBackgroundProps {
   videoSrc: string;
@@ -8,13 +7,13 @@ interface VideoBackgroundProps {
 
 const VideoBackground: React.FC<VideoBackgroundProps> = ({
   videoSrc,
-  overlayOpacity = "medium",
+  // overlayOpacity = "medium",
 }) => {
-  const overlayClass = {
-    light: "bg-black bg-opacity-30",
-    medium: "bg-black bg-opacity-50",
-    dark: "bg-black bg-opacity-70",
-  }[overlayOpacity];
+  // const overlayClass = {
+  //   light: "bg-black bg-opacity-30",
+  //   medium: "bg-black bg-opacity-50",
+  //   dark: "bg-black bg-opacity-70",
+  // }[overlayOpacity];
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
