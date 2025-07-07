@@ -43,7 +43,7 @@ export default function Page() {
         {/* 1) Video section*/}
         <section>
           <VideoBackground
-            videoSrc="/videos/omniaVideo.mp4"
+            videoSrc="/videos/omniaVideo.MP4"
             overlayOpacity={"light"}
           ></VideoBackground>
         </section>
