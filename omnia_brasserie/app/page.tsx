@@ -1,12 +1,14 @@
 import ChefBioSection from "@/components/ChefBioSection";
+import Footer from "@/components/Footer";
 import MenuButton from "@/components/MenuButton";
+import MenuSection from "@/components/MenuSection";
 import RestaurantBioSection from "@/components/RestaurantBioSection";
 import RestaurantCarousel from "@/components/RestaurantCarousel";
 import VideoBackground from "@/components/VideoBackground";
 import Image from "next/image";
 import { Suspense } from "react";
 
-const sampleImages = [
+const resturantImages = [
   "/omnia_photos/omnia_photo_1.jpeg",
   "/omnia_photos/omnia_photo_2.jpeg",
   "/omnia_photos/omnia_photo_3.jpeg",
@@ -21,6 +23,23 @@ const sampleImages = [
   "/omnia_photos/omnia_photo_12.jpeg",
   "/omnia_photos/omnia_photo_13.jpeg",
   "/omnia_photos/omnia_photo_14.jpeg",
+];
+
+const foodImages = [
+  "/omnia_food/food_1.jpeg",
+  "/omnia_food/food_2.jpeg",
+  "/omnia_food/food_3.jpeg",
+  "/omnia_food/food_4.jpeg",
+  "/omnia_food/food_5.jpeg",
+  "/omnia_food/food_6.jpeg",
+  "/omnia_food/food_7.jpeg",
+  "/omnia_food/food_8.jpeg",
+  "/omnia_food/food_9.jpeg",
+  "/omnia_food/food_10.jpeg",
+  "/omnia_food/food_11.jpeg",
+  "/omnia_food/food_12.jpeg",
+  "/omnia_food/food_13.jpeg",
+  "/omnia_food/food_14.jpeg",
 ];
 
 export default function Page() {
@@ -53,7 +72,7 @@ export default function Page() {
 
         {/* 3) Restaurant carousel */}
         <section>
-          <RestaurantCarousel images={sampleImages} />
+          <RestaurantCarousel images={resturantImages} />
         </section>
 
         {/* 4) Omnia Resturant BIO */}
@@ -61,22 +80,18 @@ export default function Page() {
           <RestaurantBioSection />
         </section>
 
-        {/* 5) Something */}
-        <section className="h-[100vh] bg-[var(--background)]">
-          תפריט – מנות פתיחה ועיקריות התפריט של אומניה מציג איזון בין נגיעות
-          גליליות מסורתיות למנות מוקפדות בסגנון ביסטרו. בין מנות הפתיחה תמצאו
-          סלט עגבניות עם שנקליש, קובה נייה בלחם שראק, טרטר בקר עם באבא גנוש,. כל
-          מנה נבנית בקפידה, עם דגש על חומרי גלם איכותיים ופרזנטציה מדויקת.
-          בעיקריות מככבים נתחים מובחרים שנחתכים במיוחד עבור המסעדה: טומהוק – נתח
-          עצום ומרשים המוגש עם העצם הארוכה, משלב עסיסיות של אנטריקוט עם מראה
-          דרמטי שמגניב את השולחן. פורטרהאוס – נתח דו-צדדי שמחבר בין פילה רך
-          לסינטה העטופה בפס שומן – הבחירה המושלמת למי שלא רוצה לבחור. ניו יורק –
-          נתח סינטה קלאסי, דק יותר ובעל מרקם בשרני ונקי. לצדם תמצאו גם קלאסיקות
-          נוספות כמו המבורגר 220 גרם, שניצל שייטל, קבב אדנה עסיסי, ומבחר תוספות
-          טריות ומפתיעות. לסיום, מחכים לכם קינוחים מושקעים
+        <section>
+          <RestaurantCarousel images={foodImages} />
         </section>
 
-        <footer></footer>
+        {/* 6) Menu */}
+        <section>
+          <MenuSection />
+        </section>
+
+        <footer>
+          <Footer />
+        </footer>
       </main>
     </>
   );

@@ -13,7 +13,7 @@ interface CarouselProps {
 export default function RestaurantCarousel({
   images,
   autoPlay = true,
-  autoPlayInterval = 4000,
+  autoPlayInterval = 3000,
 }: // showDots = true,
 CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,14 +33,14 @@ CarouselProps) {
   }, [autoPlay, autoPlayInterval]);
 
   return (
-    <div className="py-6 px-0.5 bg-amber-900 flex flex-row items-center justify-center">
+    <div className="py-6 bg-[var(--carousel-background)] flex flex-row items-center justify-center">
       <div className="relative w-full max-w-4xl mx-auto">
         {/* Carousel Container */}
         <div className="relative h-[500px] overflow-hidden">
           {images.map((src, index) => (
             <div
               key={index}
-              className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
+              className={`absolute top-0 left-0 w-full h-full transition-opacity duration-2000 ${
                 index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
             >
@@ -48,8 +48,7 @@ CarouselProps) {
                 src={src}
                 alt={`Restaurant image ${index + 1}`}
                 fill
-                objectFit="cover"
-                //   className="object-cover"
+                className="object-cover"
                 priority={index === 0}
               />
             </div>

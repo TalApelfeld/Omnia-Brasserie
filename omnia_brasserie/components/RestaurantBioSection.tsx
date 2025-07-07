@@ -1,20 +1,16 @@
+import React from "react";
+
 export default function RestaurantBioSection() {
   return (
-    <div className="h-screen bg-amber-300 flex flex-col items-center text-center p-6">
-      <div className="flex gap-1 w-full justify-center">
-        {/* <span
-              className="h-[3px] w-[40%] bg-[var(--Wine-Red)] rounded-2xl"
-              style={{ transform: "translateY(200%)" }}
-            /> */}
+    <div className=" bg-[var(--background)] flex flex-col items-center text-center px-6 py-12">
+      <div className="flex w-full justify-center items-center mb-8">
+        <span className="h-[3px] w-[40%] bg-[var(--Wine-Red)] rounded-2xl" />
 
-        <h1 className="text-[var(--Wine-Red)] text-2xl mb-5 font-hebrew">
+        <h1 className="text-[var(--Wine-Red)] text-2xl  font-hebrew">
           אומניה בראסרי
         </h1>
 
-        {/* <span
-              className="h-[3px] w-[40%] bg-[var(--Wine-Red)] rounded-2xl"
-              style={{ transform: "translateY(200%)" }}
-            /> */}
+        <span className="h-[3px] w-[40%] bg-[var(--Wine-Red)] rounded-2xl" />
       </div>
       <p className="text-[var(--Charcoal-gray)] text-lg font-hebrew">
         אומניה בראסרי מביאה לתל אביב חוויית בשרים מודרנית עם שורשים עמוקים. כל

@@ -6,14 +6,14 @@ import chefImg from "@/public/chef.jpeg";
 
 const ChefBioSection: React.FC = () => {
   return (
-    <section className="min-h-screen bg-[var(--background)] py-16 px-6 flex flex-col lg:flex-row gap-5 justify-center items-center text-[var(--Wine-Red)] font-hebrew text-center">
+    <section className="min-h-screen bg-[var(--background)] py-12 px-6 flex flex-col lg:flex-row gap-5 justify-center items-center text-[var(--Wine-Red)] font-hebrew text-center">
       <div className="">
         <header className="mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4 ">
             השף אסיל שריף
           </h2>
         </header>
-        <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+        <div className="space-y-6 text-[var(--Charcoal-gray)] text-lg leading-relaxed">
           <p>
             שמו של השף אסיל שריף כבר מוכר היטב בסצנת הקולינריה המקומית. את דרכו
             החל בגליל, והצליח לפרוץ לתודעה הבינלאומית בתוכנית &quot;טופ שף
