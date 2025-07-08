@@ -7,6 +7,7 @@ export default function MenuButton() {
   const [menuClicked, setMenuClicked] = useState(false);
 
   return menuClicked ? (
+    ////  Open Menu - Layout
     <div className="fixed h-screen z-[20] bg-[var(--menu-background)] w-full backdrop-blur-sm">
       <div className="mt-[25%] bg-white/10 backdrop-blur-md rounded-3xl mx-8 p-8 flex flex-col items-center justify-center gap-8">
         <Link
@@ -64,10 +65,12 @@ export default function MenuButton() {
       </div>
     </div>
   ) : (
+    //// Closed Menu - Layout (Button)
     <div
-      className="fixed right-6 top-6 flex items-center justify-center bg-[#00000069] hover:bg-[#aca0a0] p-1 rounded-xl z-10 cursor-pointer transition-all duration-300"
+      className="fixed right-6 top-[5%] translate-y-[-45%] flex items-center justify-center gap-2 bg-[#00000069] hover:bg-[#aca0a0] p-1 rounded-xl z-20 cursor-pointer transition-all duration-300"
       onClick={() => setMenuClicked(true)}
     >
+      <span className="text-[white]">HE</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

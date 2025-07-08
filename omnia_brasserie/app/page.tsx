@@ -43,13 +43,18 @@ const foodImages = [
 ];
 
 export default function Page() {
-  console.log("Server render");
   return (
     <>
       {/* Fixed header */}
-      <header className="fixed top-0 bg-[var(--header-background)] h-[10%] w-full flex justify-center z-[1]">
-        <div className="w-[150px] h-full flex items-center justify-center ">
-          <Image src="/logo.png" alt="logo" width={500} height={500} />
+      <header className="fixed top-0 bg-[var(--header-background)] h-[10vh] w-full flex justify-end z-[20]">
+        <div className="w-[200px] h-full flex items-center justify-center pl-6 ">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={500}
+            height={500}
+            // style={{ scale: 1 }}
+          />
         </div>
       </header>
 
@@ -58,13 +63,10 @@ export default function Page() {
         <MenuButton />
       </Suspense>
 
-      <main>
+      <main className="font-hebrew-frankRuhlLibre">
         {/* 1) Video section*/}
         <section>
-          <VideoBackground
-            videoSrc="/videos/omniaVideo.MP4"
-            overlayOpacity={"light"}
-          ></VideoBackground>
+          <VideoBackground videoSrc="/videos/omniaVideo.MP4"></VideoBackground>
         </section>
 
         {/* 2) Chef section */}

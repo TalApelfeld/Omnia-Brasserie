@@ -33,13 +33,31 @@
 //   );
 // }
 
-import { Noto_Serif_Hebrew } from "next/font/google";
+import {
+  Noto_Serif_Hebrew,
+  Frank_Ruhl_Libre,
+  David_Libre,
+} from "next/font/google";
 import "./globals.css";
 
 const notoSerifHebrew = Noto_Serif_Hebrew({
   subsets: ["hebrew"],
   weight: ["400", "700"], // regular and bold
   variable: "--font-noto-serif-hebrew",
+  display: "swap",
+});
+
+const frankRuhlLibreHebrew = Frank_Ruhl_Libre({
+  subsets: ["hebrew"],
+  weight: ["400", "700"], // regular and bold
+  variable: "--font-frank-ruhl-libre",
+  display: "swap",
+});
+
+const davidLibreHebrew = David_Libre({
+  subsets: ["hebrew"],
+  weight: ["400", "700"], // regular and bold
+  variable: "--font-david-libre",
   display: "swap",
 });
 
@@ -54,7 +72,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="rtl" className={`${notoSerifHebrew.variable}`}>
+    <html
+      lang="en"
+      dir="rtl"
+      className={`${notoSerifHebrew.variable} ${frankRuhlLibreHebrew.variable} ${davidLibreHebrew.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

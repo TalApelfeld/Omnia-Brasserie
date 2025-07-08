@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
+import { motion } from "motion/react";
+
 interface CarouselProps {
   images: string[];
   autoPlay?: boolean;
@@ -33,7 +35,7 @@ CarouselProps) {
   }, [autoPlay, autoPlayInterval]);
 
   return (
-    <div className="py-6 bg-[var(--carousel-background)] flex flex-row items-center justify-center">
+    <motion.div className=" py-3 bg-[var(--carousel-background)]  flex flex-row items-center justify-center">
       <div className="relative w-full max-w-4xl mx-auto">
         {/* Carousel Container */}
         <div className="relative h-[500px] overflow-hidden">
@@ -55,6 +57,6 @@ CarouselProps) {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

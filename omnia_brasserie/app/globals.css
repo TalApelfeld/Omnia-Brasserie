@@ -6,20 +6,23 @@
   --foreground: #171717;
   --menu-background: rgba(114, 108, 94, 0.848);
   --Link-background: rgba(77, 74, 65, 0.848);
-  --Wine-Red: rgb(122, 58, 58);
-  --carousel-background: #7b330681;
+  --Wine-Red: #7a3a3a;
+  --carousel-background: #7b330663;
 
-  --Charcoal-gray: #3b3b3b;
+  --Very-Dark-gray: #2c2c2c;
+  --Charcoal-gray: #3a3a3a;
+  --Warm-Dark-Brown: #4a3f36;
+  --Rich-Sepia: #5e4638;
   --Forest-green: #4a5f46;
 }
 
 @theme {
-  --font-hebrew: var(--font-noto-serif-hebrew);
+  --font-hebrew-notoSerif: var(--font-noto-serif-hebrew);
+  --font-hebrew-frankRuhlLibre: var(--font-frank-ruhl-libre);
+  --font-hebrew-davidLibre: var(--font-david-libre);
 }
 
 body {
-  /* background: rgb(201, 195, 179, 1); */
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   position: relative;
 }
