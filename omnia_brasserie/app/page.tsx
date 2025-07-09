@@ -66,7 +66,7 @@ export default function Page() {
       <main className="font-hebrew-frankRuhlLibre">
         {/* 1) Video section*/}
         <section>
-          <VideoBackground videoSrc="/videos/omniaVideo.MP4"></VideoBackground>
+          <VideoBackground videoSrc="/videos/omnia-bg.mp4"></VideoBackground>
         </section>
 
         {/* 2) Chef section */}
